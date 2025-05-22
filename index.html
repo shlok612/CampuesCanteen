@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCanteen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007B5E;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #f1f1f1;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #007B5E;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2em;
+        }
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .item {
+            background: white;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 200px;
+        }
+        
+        .item h4, .item p {
+            margin: 0.5em 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #007B5E;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CampusCanteen</h1>
+        <p>Order your food online from the college cafeteria</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart</a>
+        <a href="#orders">My Orders</a>
+    </nav>
+
+    <div class="container">
+        <section id="menu">
+            <h2>Today's Menu</h2>
+            <div class="menu-section">
+                <div class="item">
+                    
+                    <h4>Samosa</h4>
+                    <p>₹15</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div class="item">
+                   
+                    <h4>Pasta</h4>
+                    <p>₹80</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                 <div class="item">
+                    
+                    <h4>Burger</h4>
+                    <p>₹50</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                 <div class="item">
+                    <h4>Non Veg Thali</h4>
+                    <p>₹110</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                 <div class="item">
+                   
+                    <h4>Veg Thali</h4>
+                    <p>₹90</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <!-- More items can be added here -->
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <p>Cart functionality will be added here.</p>
+        </section>
+
+        <section id="orders">
+            <h2>My Orders</h2>
+            <p>Recent orders will appear here.</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 CampusCanteen. All rights reserved.
+    </footer>
+</body>
+</html>
